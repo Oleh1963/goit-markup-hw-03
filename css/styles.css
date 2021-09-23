@@ -9,6 +9,19 @@
   --background-btn-color: #f5f4fa;
 }
 
+p, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
@@ -37,7 +50,31 @@ ul li {
   background-color: #ffffff;
 }
 
+.header-container {
+  display: flex;
+  align-items: center;
+
+}
+ 
+.header-navigation {
+  display: flex;
+}
+
+.header-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+
 .logo {
+  margin-right: 93px;
   font-family: Raleway, sans-serif;
   display: flex;
   font-weight: bold;
@@ -58,8 +95,17 @@ ul li {
 }
 
 
+.header-list {
+  display: flex;
+  align-items: center;
+
+}
 
 
+.header-contacts-list {
+  display: flex;
+  margin-left: auto;
+}
 
 .header-link:hover,
 .header-link:focus,
@@ -81,13 +127,21 @@ ul li {
   color: var(--secondary-text-color);
 }
 
-
+.header-contacts-item:not(:first-child) {
+  margin-left: 50px;
+}
 
 .hero {
   background-color: #2f303a;
 }
 
+.hero-container {
+  
+}
+
 .hero-title {
+  margin-top: 200px;
+  margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -98,6 +152,10 @@ ul li {
 }
 
 .hero-btn {
+  margin-bottom: 200px;
+  max-width: 200px;
+  padding: 32px 10px;
+  align-items: center;
   font-family: inherit;
   font-weight: bold;
   font-size: 16px;
@@ -122,6 +180,12 @@ ul li {
   background-color: var(--tertiary-text-color);
 }
 
+.about-container {
+  display: flex;
+}
+.about-container-text {
+  display: flex;
+}
 .about-list-title {
   font-weight: bold;
   line-height: 1.14;
@@ -134,7 +198,7 @@ ul li {
 }
 
 .job {
-  background-color: var(--background-color);
+  background-color: var(--tertiary-text-color);
 }
 
 .job-title {
