@@ -7,17 +7,14 @@
   <title>WebStudio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-    rel="stylesheet" />
-  <link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
-  <link rel="stylesheet" href="./css/main.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
+  
   <link rel="stylesheet" href="./css/reset.css" />
   <link rel="stylesheet" href="./css/styles.css" />  
 </head>
 <body>
+  
    <header class="header"> 
      <div class="container header-container">
 <nav class="header-navigation"> 
@@ -41,14 +38,16 @@
 <main>
     
     <section class="hero">
-      <div class="hero-container">
+      <div class="container hero-container">
 <h1 class="hero-title">Эффективные решения <br /> для вашего бизнеса</h1>
 <button class="hero-btn" type="button">Заказать услугу</button>
       </div>
     </section>
-<section class="about">
+
+    <section class="about">
+  <div class="container about-container">
     <h2 class="about-title" hidden>Особенности</h2>
-    <ul>
+    <ul class="about-container-text">
         <li class="about-list-item">
           <h3 class="about-list-title">Внимание к деталям</h3>
             <p class="about-list-text">Идейные соображения, а также <br /> начало повседневной работы по <br /> формированию позиции.</p>
@@ -66,19 +65,24 @@
             <p class="about-list-text">Значимость этих проблем настолько <br /> очевидна, что реализация плановых <br /> заданий.</p>
         </li>
     </ul>
+  </div>
 </section>
 
 
     <section class="job">
+    <div class="job-container">
     <h2 class="job-title">Чем мы занимаемся</h2>
 <ul class="job-list"> 
 <li class="job-list-item"><img class="job-list-image" src="./images/img.jpg" alt="Пишет програму" width="370" height="294"></li>
 <li class="job-list-item"><img class="job-list-image" src="./images/img1.jpg" alt="Адаптирует под телефон" width="370" height="294"></li>
 <li class="job-list-item"><img class="job-list-image" src="./images/img2.jpg" alt="Адаптирует под планшет" width="370" height="294"></li>
 </ul>
+     </div>
     </section>
     <section class="team"> 
+      <div class="team-container">
         <h2 class="team-title">Наша команда</h2>
+       
         <ul class="team-list">
           <li class="team-list-item">
     <a class="team-list-image" href=""><img src="./images/img3.jpg" alt="Фото" width="270" height="260"></a>
@@ -100,11 +104,14 @@
     <h3 class="team-list-title">Михаил Ермаков</h3>
     <p class="team-list-text" lang="en">UI Designer</p>
           </li>
+     
         </ul>
+      </div>
     </section>
     </main>
         
    <footer class="footer">
+     <div class="footer-container">
         <a class="logo" href="./index.html">Web<span class="footer-logo">Studio</span></a>
         <address class="address">
         <ul class="address-list">
@@ -113,6 +120,8 @@
             <li class="address-item-contact"><a class="address-link-social" href="tel:+380961111111">+38 099 111 11 11</a></li>
         </ul>
         </address>
+      </div>
    </footer>
+  
 </body>
 </html>
