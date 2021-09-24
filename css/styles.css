@@ -35,6 +35,13 @@ body {
   color: var(--main-title-color);
 }
 
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 a {
   text-decoration: none;
 }
@@ -71,14 +78,6 @@ ul li {
 }
 
 
-.container {
-  width: 1200px;
-  margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-
 .logo {
   margin-right: 93px;
   margin-top: 24px;
@@ -102,13 +101,11 @@ ul li {
   color: var(--main-text-color);
 }
 
-
 .header-list {
   display: flex;
   align-items: center;
 
 }
-
 
 .header-contacts-list {
   display: flex;
@@ -144,7 +141,7 @@ ul li {
 
 .hero-container {
  
-  display: flex;
+  
   padding-top: 200px;
   padding-bottom: 200px;
   
@@ -153,7 +150,6 @@ ul li {
 
 .hero-title {
   align-items: center;
-  display: flex;
   margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
@@ -165,13 +161,13 @@ ul li {
 }
 
 .hero-btn {
+  justify-content: center;
   max-width: 200px;
   border-radius: 4px;
   font-family: inherit;
   font-weight: bold;
   font-size: 16px;
-  line-height: 1.87;
-  display: flex;
+  line-height: 1.87; 
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
@@ -197,7 +193,7 @@ ul li {
 }
 .about-container-text {
   display: flex;
-  margin-left: 215px;
+  
   justify-content: space-between;
 }
 
@@ -220,6 +216,7 @@ ul li {
 }
 
 .job-container {
+  
   margin-bottom: 94px;
   background-color: var(--tertiary-text-color);
 }
@@ -241,7 +238,7 @@ ul li {
 }
 
 .team-container {
-  display: flex;
+  justify-content: space-between
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -325,6 +322,16 @@ ul li {
   background-color: var(--tertiary-text-color);
 }
 
+.practice-list {
+  margin-bottom: 50px; 
+  display: flex;
+  justify-content: center;
+}
+
+.practice-item:not(:last-child) {
+  margin-right: 8px;
+}
+
 .practice-btn {
   font-family: inherit;
   font-weight: 500;
@@ -346,6 +353,10 @@ ul li {
 .portfolio {
   background-color: var(--accent-color);
   color: var(--tertiary-text-color);
+}
+.project {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .project-title {
