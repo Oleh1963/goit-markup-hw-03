@@ -39,6 +39,18 @@ body {
   color: var(--main-title-color);
 }
 
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+}
+
+ul li {
+  list-style: none;
+}
+
 .container {
   width: 1200px;
   margin: 0 auto;
@@ -57,17 +69,6 @@ body {
   clip: rect(0 0 0 0);
 }
 
-a {
-  text-decoration: none;
-}
-
-button {
-  border: none;
-}
-
-ul li {
-  list-style: none;
-}
 
 .link {
   text-decoration: none;
@@ -152,6 +153,8 @@ ul li {
 /* ----------------------ГЕРОЙ--------------------*/
 
 .hero {
+  width: 100%;
+  max-width: 1600px;
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
@@ -173,7 +176,6 @@ ul li {
 }
 
 .hero-btn {
-  margin-top: 30px;
   padding: 10px 32px;
   border-radius: 4px;
   font-family: inherit;
@@ -194,19 +196,24 @@ ul li {
   color: var(--tertiary-text-color);
 }
 
-
+/* ----------------------ОСОБЛИВОСТІ--------------------*/
 
 
 .about {
+  padding-top: var(--container-gap);
+  padding-bottom: var(--container-gap);
   background-color: var(--tertiary-text-color);
 }
 
 
-.about-text {
+.about-list {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
 }
 
+.about-list-item:not(:last-child) {
+  margin-right: 30px;
+}
 
 .about-list-title {
   font-weight: bold;
@@ -221,6 +228,8 @@ ul li {
   color: var(--secondary-text-color);
 }
 
+/* --------Робота---------- */
+
 
 .job {
   padding-bottom: var(--containar-gap);
@@ -228,6 +237,7 @@ ul li {
 }
 
 .job-list {
+  margin-top: 50px;
   display: flex;
   align-items: center;
 }
@@ -239,17 +249,19 @@ ul li {
   text-align: center;
 }
 
+.job-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+
+/* -----------Наша команда------------- */
+
+
 .team {
   padding-top: var(--container-gap);
   padding-bottom: var(--container-gap);
   background-color: #f5f4fa;
 }
-
-/* .team-container {
-  justify-content: space-between
-  padding-top: 94px;
-  padding-bottom: 94px;
-} */
 
 .team-title {
   font-style: normal;
@@ -266,7 +278,18 @@ ul li {
   align-items: center;
 }
 
+.team-list-item {
+  background-color: var(--main-background-color);
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.team-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .team-list-title {
+  margin-top: 30px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -274,12 +297,16 @@ ul li {
 }
 
 .team-list-text {
+  margin-top: 10px;
   padding-bottom: 30px;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
   color: var(--secondary-text-color);
 }
+
+/*------------------------------ПІДВАЛ--------------------------*/
+
 
 
 .footer {
@@ -297,8 +324,8 @@ ul li {
   margin-top: 20px;
   line-height: 1.71;
 }
-
-.address-item:not(:last-child) {
+.address-item, 
+.address-item-contact {
   margin-bottom: 9px;
 }
 
@@ -311,6 +338,7 @@ ul li {
 
 .address-link {
   color: var(--tertiary-text-color);
+  
 }
 
 .address-link-social {
@@ -323,6 +351,8 @@ ul li {
 .address-link-social:focus {
   color: var(--accent-color);
 }
+
+/* -------------Проекти------------- */
 
 .practice {
   padding-top: var(--container-gap);
@@ -360,10 +390,13 @@ ul li {
   color: var(--tertiary-text-color);
 }
 
-.portfolio {
+.one {
   background-color: var(--accent-color);
   color: var(--tertiary-text-color);
 }
+
+
+
 .project {
   display: flex;
   align-items: center;
@@ -372,6 +405,7 @@ ul li {
 }
 
 .project-title {
+  margin-bottom: 4px;
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
@@ -391,6 +425,12 @@ ul li {
 
 .project-list:nth-last-child(-n + 3) {
   margin-bottom: 0px;
+}
+
+.project-definition {
+  padding: 20px 24px;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
 }
 
 .project-text {
