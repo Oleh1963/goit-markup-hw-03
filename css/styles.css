@@ -69,7 +69,6 @@ ul li {
   clip: rect(0 0 0 0);
 }
 
-
 .link {
   text-decoration: none;
 }
@@ -80,7 +79,7 @@ ul li {
   padding-top: 24px;
   padding-bottom: 25px;
   background-color: #ffffff;
-  border: 1px; solid #ececec ;
+  border-bottom: 1px solid #ececec;
 }
 
 .header-container {
@@ -161,7 +160,6 @@ ul li {
   background-color: #2f303a;
 }
 
-
 .hero-title {
   margin: 0 auto;
   max-width: 696px;
@@ -198,17 +196,18 @@ ul li {
 
 /* ----------------------ОСОБЛИВОСТІ--------------------*/
 
-
 .about {
   padding-top: var(--container-gap);
   padding-bottom: var(--container-gap);
   background-color: var(--tertiary-text-color);
 }
 
-
 .about-list {
   display: flex;
   align-items: center;
+}
+.about-list-item {
+  width: 270px;
 }
 
 .about-list-item:not(:last-child) {
@@ -229,7 +228,6 @@ ul li {
 }
 
 /* --------Робота---------- */
-
 
 .job {
   padding-bottom: var(--containar-gap);
@@ -253,9 +251,7 @@ ul li {
   margin-right: 30px;
 }
 
-
 /* -----------Наша команда------------- */
-
 
 .team {
   padding-top: var(--container-gap);
@@ -279,7 +275,7 @@ ul li {
 }
 
 .team-list-item {
-  background-color: var(--main-background-color);
+  background-color: #ffffff;
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -307,14 +303,11 @@ ul li {
 
 /*------------------------------ПІДВАЛ--------------------------*/
 
-
-
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #2f303a;
 }
-
 
 .footer-logo {
   color: var(--tertiary-text-color);
@@ -324,7 +317,7 @@ ul li {
   margin-top: 20px;
   line-height: 1.71;
 }
-.address-item, 
+.address-item,
 .address-item-contact {
   margin-bottom: 9px;
 }
@@ -338,7 +331,6 @@ ul li {
 
 .address-link {
   color: var(--tertiary-text-color);
-  
 }
 
 .address-link-social {
@@ -395,13 +387,10 @@ ul li {
   color: var(--tertiary-text-color);
 }
 
-
-
 .project {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  margin-bottom: 94px;
 }
 
 .project-title {
